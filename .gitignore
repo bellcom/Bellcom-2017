@@ -4,7 +4,7 @@
 # Ignore non-custom parts of Drupal.
 core
 profiles
-modules
+
 
 
 # Ignore Composer-managed dependencies.
