@@ -1448,6 +1448,10 @@ box-shadow: 0px 10px 30px -8px rgba(0,0,0,0.1);
     justify-content: center;
     align-items: center;
     margin-bottom: 80px;
+<<<<<<< HEAD
+=======
+    overflow: hidden;
+>>>>>>> 62d6f826604185563ec1ad59ec4cee1957953456
 }
 
 .form-control {
