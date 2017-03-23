@@ -1,0 +1,20 @@
+uuid: aa51e40e-c5c0-4408-99e6-8f8dc0bfcc5e
+langcode: en
+status: false
+dependencies:
+  theme:
+    - bootstrap_clean_blog
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: bootstrap_clean_blog_local_actions
+theme: bootstrap_clean_blog
+region: '-1'
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

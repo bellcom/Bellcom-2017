@@ -1,0 +1,22 @@
+uuid: edcb0ac1-af30-4fb7-8ac1-2e63e67b41de
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_clean_blog
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: bootstrap_clean_blog_messages
+theme: bootstrap_clean_blog
+region: '-1'
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

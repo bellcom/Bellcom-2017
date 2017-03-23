@@ -1,0 +1,25 @@
+uuid: 9d06a5f0-5a3e-4381-adb8-2c612058ca5f
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:img:05bebdbb-45b8-4afa-b538-f080c1de4839'
+  module:
+    - block_content
+  theme:
+    - bootstrap_clean_blog
+id: frontpagefullwidthimg
+theme: bootstrap_clean_blog
+region: '-1'
+weight: -1
+provider: null
+plugin: 'block_content:05bebdbb-45b8-4afa-b538-f080c1de4839'
+settings:
+  id: 'block_content:05bebdbb-45b8-4afa-b538-f080c1de4839'
+  label: '[Frontpage-Fullwidth-Img]'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

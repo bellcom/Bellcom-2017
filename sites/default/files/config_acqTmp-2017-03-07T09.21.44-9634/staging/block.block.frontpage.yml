@@ -1,0 +1,25 @@
+uuid: e46c94d9-5072-43c7-910b-238f450d04e7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b9c22fa4-cdb9-49e7-8115-f57313be68d1'
+  module:
+    - block_content
+  theme:
+    - bootstrap_clean_blog
+id: frontpage
+theme: bootstrap_clean_blog
+region: title
+weight: 0
+provider: null
+plugin: 'block_content:b9c22fa4-cdb9-49e7-8115-f57313be68d1'
+settings:
+  id: 'block_content:b9c22fa4-cdb9-49e7-8115-f57313be68d1'
+  label: '[Frontpage]'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

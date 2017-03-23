@@ -1,0 +1,22 @@
+uuid: ff0dab0e-2d35-4bf1-acb4-ae06779ddf1e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mdl
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: mdl_local_tasks
+theme: mdl
+region: header
+weight: 10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

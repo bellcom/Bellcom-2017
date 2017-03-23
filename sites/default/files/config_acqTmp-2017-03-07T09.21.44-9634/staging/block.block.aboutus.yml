@@ -1,0 +1,25 @@
+uuid: c9c18640-41af-4e1e-872f-98135b496216
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:3289603e-fa1b-4287-bd85-0f5b4f075f12'
+  module:
+    - block_content
+  theme:
+    - bootstrap_clean_blog
+id: aboutus
+theme: bootstrap_clean_blog
+region: '-1'
+weight: -11
+provider: null
+plugin: 'block_content:3289603e-fa1b-4287-bd85-0f5b4f075f12'
+settings:
+  id: 'block_content:3289603e-fa1b-4287-bd85-0f5b4f075f12'
+  label: 'About Us'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

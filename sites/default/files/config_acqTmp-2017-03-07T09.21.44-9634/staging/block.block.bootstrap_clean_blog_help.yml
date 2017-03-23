@@ -1,0 +1,22 @@
+uuid: 810ff155-8da6-4219-9723-630ab588bf22
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - bootstrap_clean_blog
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: bootstrap_clean_blog_help
+theme: bootstrap_clean_blog
+region: '-1'
+weight: -7
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

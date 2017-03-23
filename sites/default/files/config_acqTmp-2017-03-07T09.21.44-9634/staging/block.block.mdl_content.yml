@@ -1,0 +1,22 @@
+uuid: 6df0d085-860b-4a26-b75b-e5a19df53d6d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mdl
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: mdl_content
+theme: mdl
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,38 @@
+uuid: 6dda53a7-add9-4ad4-93ad-04c3789e2e94
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.logo_img
+    - field.storage.block_content.field_logo_fifth
+  module:
+    - image
+id: block_content.logo_img.field_logo_fifth
+field_name: field_logo_fifth
+entity_type: block_content
+bundle: logo_img
+label: logo_fifth
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 34d21d4e-b93d-468e-b6fd-bd70310d0519
+    alt: ''
+    title: ''
+    width: 543
+    height: 328
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

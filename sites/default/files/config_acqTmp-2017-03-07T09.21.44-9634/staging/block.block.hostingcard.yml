@@ -1,0 +1,25 @@
+uuid: a448033c-7f3c-4b67-aa94-c8995355d43f
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:530dd6f6-2881-486c-865a-6b9cec7f8478'
+  module:
+    - block_content
+  theme:
+    - bootstrap_clean_blog
+id: hostingcard
+theme: bootstrap_clean_blog
+region: '-1'
+weight: -6
+provider: null
+plugin: 'block_content:530dd6f6-2881-486c-865a-6b9cec7f8478'
+settings:
+  id: 'block_content:530dd6f6-2881-486c-865a-6b9cec7f8478'
+  label: 'Hosting Card'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 6a0aa7a3-efa6-4b92-b7e5-b2fefd0d2aa4
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:56c68f78-97cb-4b83-82fc-99264b96bfd3'
+  module:
+    - block_content
+  theme:
+    - bootstrap_clean_blog
+id: frontpage_course
+theme: bootstrap_clean_blog
+region: '-1'
+weight: 0
+provider: null
+plugin: 'block_content:56c68f78-97cb-4b83-82fc-99264b96bfd3'
+settings:
+  id: 'block_content:56c68f78-97cb-4b83-82fc-99264b96bfd3'
+  label: '[Frontpage_Course]'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

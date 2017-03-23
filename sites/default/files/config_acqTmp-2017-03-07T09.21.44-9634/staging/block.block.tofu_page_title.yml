@@ -1,0 +1,20 @@
+uuid: 85afb872-cd5f-4506-a60e-96b355163753
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tofu
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: tofu_page_title
+theme: tofu
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

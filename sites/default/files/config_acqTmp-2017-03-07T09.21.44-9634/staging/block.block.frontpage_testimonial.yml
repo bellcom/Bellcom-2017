@@ -1,0 +1,25 @@
+uuid: a6a9476f-016c-42f1-b773-a4a3d4c02718
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:4c7a1046-9c35-41c5-9c33-276e741cbb4e'
+  module:
+    - block_content
+  theme:
+    - bootstrap_clean_blog
+id: frontpage_testimonial
+theme: bootstrap_clean_blog
+region: '-1'
+weight: 1
+provider: null
+plugin: 'block_content:4c7a1046-9c35-41c5-9c33-276e741cbb4e'
+settings:
+  id: 'block_content:4c7a1046-9c35-41c5-9c33-276e741cbb4e'
+  label: '[Frontpage_testimonial]'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

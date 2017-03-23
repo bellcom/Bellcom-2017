@@ -1,0 +1,38 @@
+uuid: 322b2e89-54ae-4ee3-a25f-19f7a4b8ca1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.logo_img
+    - field.storage.block_content.field_logo_sixth
+  module:
+    - image
+id: block_content.logo_img.field_logo_sixth
+field_name: field_logo_sixth
+entity_type: block_content
+bundle: logo_img
+label: logo_sixth
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 0d19edd3-c6ef-447e-a62a-c30a726ee67b
+    alt: ''
+    title: ''
+    width: 750
+    height: 377
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,22 @@
+uuid: 82711c05-fd81-4467-a9e1-e859db08a5e0
+langcode: en
+status: false
+dependencies:
+  theme:
+    - bootstrap_clean_blog
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: bootstrap_clean_blog_local_tasks
+theme: bootstrap_clean_blog
+region: '-1'
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: cd585e40-ffd8-4a48-a571-2e8908cadad7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:logo_img:f8d822e4-5203-4827-b439-2f85b67f410c'
+  module:
+    - block_content
+  theme:
+    - bootstrap_clean_blog
+id: koebenhavn
+theme: bootstrap_clean_blog
+region: customer
+weight: 0
+provider: null
+plugin: 'block_content:f8d822e4-5203-4827-b439-2f85b67f410c'
+settings:
+  id: 'block_content:f8d822e4-5203-4827-b439-2f85b67f410c'
+  label: 'Københavns Kommune'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

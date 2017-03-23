@@ -1,0 +1,25 @@
+uuid: 87fe5984-c00a-4b5e-8aea-b81b8a606044
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:a40d1556-953a-4710-bb0e-ae65d032fa77'
+  module:
+    - block_content
+  theme:
+    - bootstrap_clean_blog
+id: cta
+theme: bootstrap_clean_blog
+region: '-1'
+weight: -9
+provider: null
+plugin: 'block_content:a40d1556-953a-4710-bb0e-ae65d032fa77'
+settings:
+  id: 'block_content:a40d1556-953a-4710-bb0e-ae65d032fa77'
+  label: CTA
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

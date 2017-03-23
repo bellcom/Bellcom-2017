@@ -1,0 +1,22 @@
+uuid: c98918fc-a10e-4279-8318-8a9c3af3d7a3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tofu
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: tofu_local_tasks
+theme: tofu
+region: header
+weight: 10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

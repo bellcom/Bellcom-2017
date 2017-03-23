@@ -1,0 +1,22 @@
+uuid: 242e3854-67a1-4343-9b42-9fc73bc5a35f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - tofu
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: tofu_help
+theme: tofu
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

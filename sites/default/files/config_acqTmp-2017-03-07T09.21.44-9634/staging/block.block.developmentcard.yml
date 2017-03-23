@@ -1,0 +1,25 @@
+uuid: 3086199d-0466-4544-82f3-56f8e9c4861b
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:a69e1ffe-a6fd-4742-8c4a-550c7e6172e4'
+  module:
+    - block_content
+  theme:
+    - bootstrap_clean_blog
+id: developmentcard
+theme: bootstrap_clean_blog
+region: '-1'
+weight: -8
+provider: null
+plugin: 'block_content:a69e1ffe-a6fd-4742-8c4a-550c7e6172e4'
+settings:
+  id: 'block_content:a69e1ffe-a6fd-4742-8c4a-550c7e6172e4'
+  label: 'Development Card'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

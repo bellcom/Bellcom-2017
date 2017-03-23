@@ -1,0 +1,25 @@
+uuid: 14b95244-886d-4298-96b0-78562367c94e
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:21bf3528-5873-452d-9a3d-c5ee505954ea'
+  module:
+    - block_content
+  theme:
+    - bootstrap_clean_blog
+id: supportcard
+theme: bootstrap_clean_blog
+region: '-1'
+weight: -3
+provider: null
+plugin: 'block_content:21bf3528-5873-452d-9a3d-c5ee505954ea'
+settings:
+  id: 'block_content:21bf3528-5873-452d-9a3d-c5ee505954ea'
+  label: 'Support Card'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

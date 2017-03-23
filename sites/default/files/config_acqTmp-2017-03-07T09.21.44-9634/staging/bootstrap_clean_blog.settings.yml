@@ -1,0 +1,39 @@
+bootstrap_clean_blog_header_image: none
+bootstrap_clean_blog_header_default: 'http://new.bellcom.dd:8083/themes/custom/site_new/images/home-bg.jpg'
+bootstrap_clean_blog_social_facebook: 'https://www.facebook.com/bellcomdk'
+bootstrap_clean_blog_social_twitter: 'https://twitter.com/bellcomdk'
+bootstrap_clean_blog_social_github: 'https://github.com/bellcom'
+bootstrap_clean_blog_social_drupal: ''
+bootstrap_clean_blog_social_instagram: ''
+bootstrap_clean_blog_social_reddit: ''
+bootstrap_clean_blog_social_flickr: ''
+bootstrap_clean_blog_social_linkedin: 'https://www.linkedin.com/company/bellcom'
+_core:
+  default_config_hash: 8Cp0LirRgCICAHEZnhxtkUjEaSalfES-0KbNhOQFZZ4
+schemas:
+  bootstrap: 8000
+  bootstrap_clean_blog: 8000
+table_responsive: '-1'
+table: ''
+region_wells:
+  header: ''
+  title: ''
+  customer: ''
+  highlighted: ''
+  content: ''
+  footer: ''
+cdn_provider_import_data: ''
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: profiles/lightning/favicon.ico
+  url: 'http://new.bellcom.dd:8083/profiles/lightning/favicon.ico'
+  use_default: false
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: profiles/lightning/lightning.png
+  url: ''
+  use_default: false

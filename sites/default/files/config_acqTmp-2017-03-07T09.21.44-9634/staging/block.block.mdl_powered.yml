@@ -1,0 +1,22 @@
+uuid: cc734c8f-3816-4fac-b9dc-83fffec6e475
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - mdl
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: mdl_powered
+theme: mdl
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

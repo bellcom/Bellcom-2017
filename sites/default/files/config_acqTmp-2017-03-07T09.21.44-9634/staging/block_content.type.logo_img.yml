@@ -1,0 +1,8 @@
+uuid: a208dcc0-9cb1-4324-ac21-e6146af948cf
+langcode: en
+status: true
+dependencies: {  }
+id: logo_img
+label: 'Logo img'
+revision: 1
+description: ''

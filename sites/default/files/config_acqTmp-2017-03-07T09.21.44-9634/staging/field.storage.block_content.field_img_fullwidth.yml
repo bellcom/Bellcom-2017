@@ -1,0 +1,30 @@
+uuid: afca7baf-c02c-41aa-a3dd-3ace31a258a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - file
+    - image
+id: block_content.field_img_fullwidth
+field_name: field_img_fullwidth
+entity_type: block_content
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: 92f8d8da-ca0d-410a-9961-129acc5e310b
+    alt: 'Happy customer'
+    title: 'Satisfied Customer'
+    width: 1600
+    height: 750
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

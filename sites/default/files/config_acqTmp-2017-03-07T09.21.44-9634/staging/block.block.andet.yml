@@ -1,0 +1,24 @@
+uuid: 8afc2cd8-bce8-424b-a592-e88396764d27
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.andet
+  module:
+    - system
+  theme:
+    - bootstrap_clean_blog
+id: andet
+theme: bootstrap_clean_blog
+region: '-1'
+weight: 3
+provider: null
+plugin: 'system_menu_block:andet'
+settings:
+  id: 'system_menu_block:andet'
+  label: Andet
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,13 @@
+uuid: ab5a69cd-3d9e-4590-8568-9e6ccaa890e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - workbench_moderation.moderation_state.needs_review
+_core:
+  default_config_hash: 2ZwHY8f7BOw10JPCAwIB5uLRa9Vc6sQcO5XxAMij_n0
+id: needs_review_needs_review
+label: 'Keep in Review'
+stateFrom: needs_review
+stateTo: needs_review
+weight: -8

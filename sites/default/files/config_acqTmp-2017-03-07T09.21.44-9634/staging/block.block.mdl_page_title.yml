@@ -1,0 +1,20 @@
+uuid: 2a9253f5-3946-477e-9878-796b61f29061
+langcode: en
+status: true
+dependencies:
+  theme:
+    - mdl
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: mdl_page_title
+theme: mdl
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
