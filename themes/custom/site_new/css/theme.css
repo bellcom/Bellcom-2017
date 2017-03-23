@@ -1430,7 +1430,7 @@ a[title="Report errors in the road map or imagery to Google"] {
 .gmnoprint:last-child {
     display: none !important;
 }
-
+/* Some content - Overflow:hidden; */
 .some-content {
     
     width: 100%;
