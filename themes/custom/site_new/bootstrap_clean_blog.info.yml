@@ -1,0 +1,24 @@
+name : Bellcom ST17 Theme 
+description : 'A responsive Bootstrap based theme made by the amazing Danish Front-end and digital designer, Simon Tofteby.'
+type: theme
+package: Bootstrap
+# core : 8.x
+base theme : bootstrap
+# version: VERSION
+regions:
+  header: Header
+  title: Titles
+  customer: Customer Logos
+  highlighted: Highlighted
+  content: Content
+  footer: Footer
+
+libraries:
+  - bootstrap_clean_blog/global-styling
+  - bootstrap_clean_blog/respond
+
+# Information added by Drupal.org packaging script on 2016-10-08
+version: 'v1.0'
+core: '8.x'
+project: 'bootstrap_clean_blog'
+datestamp: 1475907840

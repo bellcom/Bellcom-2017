@@ -1,0 +1,303 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a single page.
+ *
+ * The doctype, html, head and body tags are not in this template. Instead they
+ * can be found in the html.html.twig template in this directory.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - base_path: The base URL path of the Drupal installation. Will usually be
+ *   "/" unless you have installed Drupal in a sub-directory.
+ * - is_front: A flag indicating if the current page is the front page.
+ * - logged_in: A flag indicating if the user is registered and signed in.
+ * - is_admin: A flag indicating if the user has permission to access
+ *   administration pages.
+ *
+ * Site identity:
+ * - front_page: The URL of the front page. Use this instead of base_path when
+ *   linking to the front page. This includes the language domain or prefix.
+ * - logo: The url of the logo image, as defined in theme settings.
+ * - site_name: The name of the site. This is empty when displaying the site
+ *   name has been disabled in the theme settings.
+ * - site_slogan: The slogan of the site. This is empty when displaying the site
+ *   slogan has been disabled in theme settings.
+ *
+ * Navigation:
+ * - breadcrumb: The breadcrumb trail for the current page.
+ *
+ * Page content (in order of occurrence in the default page.html.twig):
+ * - title_prefix: Additional output populated by modules, intended to be
+ *   displayed in front of the main title tag that appears in the template.
+ * - title: The page title, for use in the actual content.
+ * - title_suffix: Additional output populated by modules, intended to be
+ *   displayed after the main title tag that appears in the template.
+ * - messages: Status and error messages. Should be displayed prominently.
+ * - tabs: Tabs linking to any sub-pages beneath the current page (e.g., the
+ *   view and edit tabs when displaying a node).
+ * - action_links: Actions local to the page, such as "Add menu" on the menu
+ *   administration interface.
+ * - node: Fully loaded node, if there is an automatically-loaded node
+ *   associated with the page and the node ID is the second argument in the
+ *   page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ * Regions:
+ * - page.header: Items for the header region.
+ * - page.primary_menu: Items for the primary menu region.
+ * - page.secondary_menu: Items for the secondary menu region.
+ * - page.highlighted: Items for the highlighted content region.
+ * - page.help: Dynamic help text, mostly for admin pages.
+ * - page.content: The main content of the current page.
+ * - page.sidebar_first: Items for the first sidebar.
+ * - page.sidebar_second: Items for the second sidebar.
+ * - page.footer: Items for the footer region.
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ *
+ * @ingroup templates
+ */
+#}
+
+
+<!---- Fixed Contact Box ---->
+
+<div class="contact-box">
+<div class="contact-box-label">
+    <a>Kontakt <i class="fa fa-envelope" aria-hidden="true"></i>
+</a>
+</div>
+<div class="contact-box-content">
+     <dd>{{ drupal_block('contactblock') }}</dd>
+</div>
+</div>
+
+<!--- End of Fixed Contact Box -->
+
+<nav class="navbar navbar-solid navbar-custom navbar-fixed-top fixed" id="light">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">{{ 'Toggle navigation'|t}}</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar short-bar"></span>
+      </button>
+      {% if site_name %}
+        <a class="navbar-brand" href="{{ front_page }}" title="{{ 'Home'|t }}">{{ site_name }}</a>
+      {% endif %}
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      {{ page.header.bootstrap_clean_blog_main_menu }}
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+</nav>
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="page-header node-header">
+  <div class="container padding">
+<div class="row">
+
+<h1>Vi er Bellcom</h1>
+ <p>Vores primære kompetencer er teknisk rådgivning, agil udvikling, design og implementering af innovative hjemmesider i open source teknologi baseret på CMS platformen Drupal.</p>
+</div>
+    </div>
+
+</header>
+
+<!-- Post Content -->
+  <div class="bg-white">
+
+  <div class="container padding">
+    <div class="row">
+      
+      <div class="con-img-right">
+          <div class="col-8 col-sm-6">
+          <dd>{{ drupal_block('aboutus') }}</dd>
+          </div>
+          
+          <div class="col-4 col-sm-6">
+          <div class="bc-video">
+          <a href="https://www.youtube.com/watch?v=dFsMnzp6t1Y" id="youtube" data-modal="button"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> 
+          </div></div>
+          
+      </div>
+       
+       <!-- Customer Logos -->
+      <div class="title-customer">
+          <h3>Vi har kunder i hele landet.</h3>
+          <p>Er du vores næste kunde? Vi gør en stor dyd ud af at pleje vores kunder bedst muligt.</p>
+      </div>
+      <div class="customer-logos no-top-margin">
+           {{ page.customer }}
+      </div>
+      
+      <div class="con-team">
+         <div class="con-team-title">
+          <h3>Vi er Bellcom. Vi er et team.</h3>
+          <p>Vores primære kompetencer er teknisk rådgivning, agil udvikling, design og <em>open source</em> webudvikling.</p></div>
+          <div class="employees">
+             <!--- Employees row -->
+              <div class="employees-row">
+                <!--- Employee img -->
+                 <div class="employee">
+                 <div class="e-overlay"><h5>Linda Skov</h5><p>Direktør</p><hr width="40%;" style="opacity:0.6;"><a href="tel:22485919">+45 22 48 59 19</a><a href="mailto:ls@bellcom.dk">ls@bellcom.dk</a></div>
+                  <img src="{{ base_path ~ directory }}/images/avatar-linda.png">
+                  </div>
+                  <!--- Employee img end-->
+                   <!--- Employee img -->
+                 <div class="employee">
+                 <div class="e-overlay"><h5>Jørn Skifter Andersen</h5><p>IT-arkitekt</p><hr width="40%;" style="opacity:0.6;"><a href="tel:29907836">+45 29 90 78 36</a><a href="mailto:js@bellcom.dk">js@bellcom.dk</a></div>
+                   <img src="{{ base_path ~ directory }}/images/avatar-jørn.png">
+                  </div>
+                  <!--- Employee img end-->
+                   <!--- Employee img -->
+                 <div class="employee">
+                 <div class="e-overlay"><h5>Franz Skaaning</h5><p>Webkonsulent</p><hr width="40%;" style="opacity:0.6;"><a href="tel:20235029">+45 20 23 50 29</a><a href="mailto:fs@bellcom.dk">fs@bellcom.dk</a></div>
+                   <img src="{{ base_path ~ directory }}/images/avatar-franz-02.png">
+                  </div>
+                  <!--- Employee img end-->
+              </div>
+              <!-- Employee row end -->
+              
+          </div>
+          
+          <div class="employees">
+             <!--- Employees row -->
+              <div class="employees-row">
+                <!--- Employee img -->
+                 <div class="employee">
+                 <div class="e-overlay"><h5>Hanne Grave</h5><p>Administrationskoordinator</p><hr width="40%;" style="opacity:0.6;"><a href="tel:77347848">+45 77 34 78 48</a><a href="mailto:hg@bellcom.dk">hg@bellcom.dk</a></div>
+                  <img src="{{ base_path ~ directory }}/images/avatar-hanne.png">
+                  </div>
+                  <!--- Employee img end-->
+                   <!--- Employee img -->
+                 <div class="employee">
+                 <div class="e-overlay"><h5>Mike Andersen</h5><p>Webudvikler / OTG</p><hr width="40%;" style="opacity:0.6;"><a href="tel:77347842">+45 77 34 78 42</a><a href="mailto:mr@bellcom.dk">mr@bellcom.dk</a></div>
+                   <img src="{{ base_path ~ directory }}/images/avatar-mike.png">
+                  </div>
+                  <!--- Employee img end-->
+                   <!--- Employee img -->
+                 <div class="employee">
+                 <div class="e-overlay"><h5>Mikkel Kaas</h5><p>DevOPS / System Admin</p><hr width="40%;" style="opacity:0.6;"><a href="tel:70260085">+45 70 26 00 85</a><a href="mailto:mk@bellcom.dk">mk@bellcom.dk</a></div>
+                   <img src="{{ base_path ~ directory }}/images/avatar-mikkel.png">
+                  </div>
+                  <!--- Employee img end-->
+              </div>
+              <!-- Employee row end -->
+              
+          </div>
+          
+           <div class="employees">
+             <!--- Employees row -->
+              <div class="employees-row">
+                <!--- Employee img -->
+                 <div class="employee">
+                 <div class="e-overlay"><h5>Per Okkels</h5><p>Supporter</p><hr width="40%;" style="opacity:0.6;"><a href="tel:77347840">+45 77 34 78 40</a><a href="mailto:po@bellcom.dk">po@bellcom.dk</a></div>
+                    <img src="{{ base_path ~ directory }}/images/avatar-per.png">
+                  </div>
+                  <!--- Employee img end-->
+                   <!--- Employee img -->
+                 <div class="employee">
+                 <div class="e-overlay"><h5>Aleksander Simonsen</h5><p>Kundekonsulent</p><hr width="40%;" style="opacity:0.6;"><a href="tel:70260085">+45 61 28 78 36</a><a href="mailto:as@bellcom.dk">as@bellcom.dk</a></div>
+                   <img src="{{ base_path ~ directory }}/images/avatar-alexander.png">
+                  </div>
+                  <!--- Employee img end-->
+                   <!--- Employee img -->
+                 <div class="employee">
+                 <div class="e-overlay"><h5>Kristian Pedersen</h5><p>Marketing</p><hr width="40%;" style="opacity:0.6;"><a href="tel:77347843">+45 77 34 78 43</a><a href="mailto:pk@bellcom.dk">pk@bellcom.dk</a></div>
+                  <img src="{{ base_path ~ directory }}/images/avatar-kristian.png">
+                  </div>
+                  <!--- Employee img end-->
+              </div>
+              <!-- Employee row end -->
+              
+          </div>
+          
+             <div class="employees">
+             <!--- Employees row -->
+              <div class="employees-row">
+                <!--- Employee img -->
+                 <div class="employee">
+                 <div class="e-overlay"><h5>Morten Nielsen</h5><p>Søgemaskineoptimering & Sociale Medier</p><hr width="40%;" style="opacity:0.6;"><a href="tel:70260085">+45 70 26 00 85</a><a href="mailto:mt@bellcom.dk">mt@bellcom.dk</a></div>
+                   <img src="{{ base_path ~ directory }}/images/avatar-morten.png">
+                  </div>
+                  <!--- Employee img end-->
+                   <!--- Employee img -->
+                 <div class="employee">
+                 <div class="e-overlay"><h5>Arne Nielsen</h5><p>Kundekonsulent</p><hr width="40%;" style="opacity:0.6;"><a href="tel:77347831">+45 77 34 78 31</a><a href="mailto:st@bellcom.dk">apn@bellcom.dk</a></div>
+                   <img src="{{ base_path ~ directory }}/images/avatar-arne.png">
+                  </div>
+                  <!--- Employee img end-->
+                   <!--- Employee img -->
+                 <div class="employee">
+                 <div class="e-overlay"><h5>Simon Tofteby</h5><p>Praktikant</p><hr width="40%;" style="opacity:0.6;"><a href="tel:70260085">+45 70 26 00 85</a><a href="mailto:st@bellcom.dk">st@bellcom.dk</a></div>
+                   <img src="{{ base_path ~ directory }}/images/avatar-simon.jpg">
+                   
+                  </div>
+                  <!--- Employee img end-->
+              </div>
+              <!-- Employee row end -->
+              
+          </div>
+          
+      </div>
+        
+      <div class="cta-block">
+            <dd>{{ drupal_block('cta') }}</dd>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-sm-3">
+         {% if site_name %}
+        <a class="navbar-brand" href="{{ front_page }}" title="{{ 'Home'|t }}">{{ site_name }}</a>
+      {% endif %}
+       <a class="mail-link" href="mailto:support@bellcom.dk">support@bellcom.dk</a>
+       <p class="footer-location-text">Bredgade 20 <br> 6000 Kolding <br><br> <a class="telephone-link" href="tel:70260085">Tlf.: 70 26 00 85</a> <br><br> Man-Fre: 09:00 - 17:00</bt></p>
+        {# Social buttons block #}
+        {% block social_buttons %}
+        {% if social_links %}
+        <ul class="list-inline">
+          {% for network, url in social_links %}
+          <li>
+            <a target="_blank" href="{{ url }}">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-{{ network }} fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+        {% endblock %}
+           </div>
+          <div class="col-6 col-sm-3 na-mobile">
+          <h6>Menu</h6>
+          <dd>{{ drupal_block('bootstrap_clean_blog_footer') }}</dd>
+          </div>
+          <div class="col-6 col-sm-3 na-mobile">
+          <h6>Andet</h6>
+          <dd>{{ drupal_block('andet') }}</dd>
+          </div>
+          <div class="col-6 col-sm-3 na-mobile"><h6>Seneste blogindlæg</h6></div>
+ 
+    
+    </div>
+  </div>
+</footer>
